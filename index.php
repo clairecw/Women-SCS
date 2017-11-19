@@ -32,7 +32,7 @@
             <?php
 	        	$json = json_decode($calendarEvents, true);
             // var_dump($json["items"]);
-	        	
+
             usort($json["items"], function($a, $b) { //Sort the array using a user defined function
               $dateStringA = $a["start"]["date"] ? $a["start"]["date"] : $a["start"]["dateTime"];
               $dateStringB = $b["start"]["date"] ? $b["start"]["date"] : $b["start"]["dateTime"];
@@ -108,7 +108,7 @@
                   the_post_thumbnail();
               }
               else {
-                  echo '<img class="image" src="' . get_bloginfo( 'stylesheet_directory' )
+                  echo '<img class="image thumbnail" src="' . get_bloginfo( 'stylesheet_directory' )
                       . '/img/feature.jpeg" />';
               }
               echo sprintf(
