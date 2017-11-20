@@ -1,5 +1,4 @@
 <?php /* Template Name: Photo Gallery */ ?>
-<head><title>Women@SCS Photos</title></head>
 <?php get_header(); 
     date_default_timezone_set('EST');
     $currentTime = date('c');
@@ -20,7 +19,7 @@
       <!-- start W@SCS general info (CMU logo, W@SCS, mission) -->
       <div class="col s12 l8">
         <div class="wscs-info">
-          <img class="cmu-logo" src="<?php echo get_template_directory_uri() . '/img/cmu_wordmark.png';?>">
+          <a href="https://www.cmu.edu/"><img class="cmu-logo" src="<?php echo get_template_directory_uri() . '/img/cmu_wordmark.png';?>"></a>
         </div>
         <h1 class="wscs-info">WOMEN<b>@SCS</b></h1> 
         <p class="wscs-info hide-on-small-screens"> The Women@SCS mission is to create, encourage, and support academic, social, and professional opportunities for women in computer science and to promote the breadth of the field and its diverse community. </p>
@@ -59,7 +58,7 @@
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
       
       <div class="page-title "><b><?php the_title() ?> Photo Gallery</b></div>
-      <?php the_content() ?>
+      <p class="description"><?php the_content() ?></p>
       
     <?php endwhile; else : ?>
 
@@ -67,9 +66,8 @@
 
     <?php endif; ?>
   </div>
-
-
 </main>
 
 <?php get_footer(); ?>
+
 
