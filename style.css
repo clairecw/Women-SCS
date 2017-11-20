@@ -91,9 +91,9 @@ iframe {
 }
 
 .thumbnail {
-  max-height: 400px;
-  max-width: 300px;
-  width: auto;
+  height: 400px;
+  width: 300px;
+  background-size: cover;
 }
 
 .news {

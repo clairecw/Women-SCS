@@ -105,11 +105,12 @@
               echo sprintf(
                 '<a class="post-link" href="%s">', esc_url(get_permalink()));
               if ( has_post_thumbnail() ) {
-                  the_post_thumbnail();
+                  echo '<div class="image thumbnail" style="background-image:url(' . get_the_post_thumbnail_url()
+                      . '"> </div>';
               }
               else {
-                  echo '<img class="image thumbnail" src="' . get_bloginfo( 'stylesheet_directory' )
-                      . '/img/feature.jpeg" />';
+                  echo '<div class="image thumbnail" style="background-image:url(' . get_bloginfo( 'stylesheet_directory' )
+                      . '/img/feature.jpeg)"></div>';
               }
               echo sprintf(
                 '<div class="news">
