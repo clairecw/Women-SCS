@@ -127,5 +127,11 @@ h4 {
 	letter-spacing: 3.8px;
 	font-size: 2.5rem;
 	margin: 0px;
-	line-height: 35px;
+	line-height: 45px;
+	text-align: center;
+}
+
+img {
+	padding-top: 5px;
+	padding-bottom: 5px;
 }

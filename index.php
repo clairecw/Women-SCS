@@ -19,7 +19,7 @@
         <div class="wscs-info">
           <a href="https://www.cmu.edu/"><img class="cmu-logo" src="<?php echo get_template_directory_uri() . '/img/cmu_wordmark.png';?>"></a>
         </div>
-        <h1 class="wscs-info">WOMEN<b>@SCS</b></h1>
+        <a href="<?php echo home_url(); ?>" style="color: inherit;"><h1 class="wscs-info">WOMEN<b>@SCS</b></h1></a>
         <p class="wscs-info"> The Women@SCS mission is to create, encourage, and support academic, social, and professional opportunities for women in computer science and to promote the breadth of the field and its diverse community. </p>
       </div>
       <!-- end W@SCS general info (CMU logo, W@SCS, mission) -->
