@@ -90,6 +90,11 @@ iframe {
 	text-align: center;
 }
 
+.image.feature {
+  width: 60%;
+  background-size: cover;
+}
+
 .thumbnail {
   height: 400px;
   width: 300px;

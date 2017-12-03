@@ -95,11 +95,6 @@ html {
 	height: 350px;
 }
 
-.image.feature {
-	width: 60%;
-	height: 350px; /* featured image is longer than others :) */
-}
-
 .news.feature {
 	width: 39%; /* there's a small space between image + news div so widths 39% + 60% (image div) used to prevent stacking of the divs one on top of the other */
 	vertical-align: top; /* needed for featured news div to be vertically aligned with featured image div */

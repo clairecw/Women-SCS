@@ -71,15 +71,14 @@
 		    	<div class="label"> <h2>News</h2> </div>
 		      	<div class="col s12 post">
 			        <!-- TODO: deal with how much content is outputted here, and making sure it's centered; problem is need vertical-align: top to keep news div in line with image div -->
-			        <!--div class="image feature"></div-->
               <?php
                 if ( has_post_thumbnail() ) {
-                  the_post_thumbnail(
-                    'post-thumbnail', ['class' => 'image feature', 'title' => 'Feature Post Thumbnail']);
+                  echo '<div class="image feature" style="background-image:url(' . get_the_post_thumbnail_url()
+                      . '"> </div>';
                 }
                 else {
-                    echo '<img class="image feature" src="' . get_bloginfo( 'stylesheet_directory' )
-                        . '/img/feature.jpeg" />';
+                  echo '<div class="image feature" style="background-image:url(' . get_bloginfo( 'stylesheet_directory' )
+                      . '/img/feature.jpeg)"></div>';
                 }
               ?>
 		        	<div class="news feature">
