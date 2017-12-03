@@ -90,14 +90,15 @@ iframe {
 	text-align: center;
 }
 
+.thumbnail {
+  height: 400px;
+  width: 300px;
+  background-size: cover;
+}
+
 .news {
   	padding: 0px 10px;
   	width: 100%;
-}
-
-.image {
-	background-image: url(img/feature.jpeg);
-	background-size: cover;
 }
 
 .button {
@@ -108,7 +109,9 @@ iframe {
 	color: #fff;
 	border-radius: 15px;
 	line-height: 3;
-  padding: 16px 24px;
+  padding: 6px 24px;
+  margin-top: 24px;
+  display: inline-block
 }
 
 .button:hover {
