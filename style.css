@@ -129,3 +129,10 @@ iframe {
 	left: 20px;
 	height: 40px;
 }
+
+/* Image formats for posts */
+
+img {
+	max-width: 100%;
+    height: auto;
+}
