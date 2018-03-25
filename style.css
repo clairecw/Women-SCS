@@ -118,3 +118,33 @@ p {
 .dropdown-content {
   top: 64px!important;
 }
+
+.search-page-header {
+  margin-bottom: 48px;
+}
+
+.search-post {
+  margin-top: 20px;
+}
+
+.search-post > a {
+  color: #00294b;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.search-post > a:hover {
+  text-decoration: underline;
+}
+
+.search-post > h5 {
+  margin: 0px;
+}
+
+.search-post > p {
+  margin: 0px;
+}
+
+.no-results {
+  display: inline-block;
+}
