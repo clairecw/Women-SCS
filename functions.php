@@ -225,7 +225,7 @@ function get_search_form_custom( $echo = true ) {
         } else {
             $form = '<form role="search" method="get" id="searchform" class="searchform" action="' . esc_url( home_url( '/' ) ) . '">
                 <div>
-                    <input type="text" value="' . get_search_query() . '" name="s" id="s" placeholder="Search" />
+                    <input type="text" class="search-input" value="' . get_search_query() . '" name="s" id="s" placeholder="Search" />
                 </div>
             </form>';
         }

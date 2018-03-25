@@ -52,9 +52,14 @@ hr {
 }
 
 .feature-title { /* to make feature post title look like other posts' titles */
-	font-size: 1.2rem;
-	margin: 7px 0px;
-	font-weight: 200;
+	font-size: 1.3rem;
+}
+
+.feature-date {
+  font-style: italic;
+  text-transform: none;
+  font-size: 1rem;
+  font-weight: normal;
 }
 
 .image {
@@ -186,4 +191,12 @@ img {
 .upcoming-events {
 	font-size: 1.3rem;
 	font-weight: 600;
+}
+
+.content.full-width {
+  color: #00294b;
+}
+
+.content.full-width > i {
+  font-size: 1rem;
 }

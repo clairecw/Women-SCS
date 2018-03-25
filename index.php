@@ -75,7 +75,7 @@
                       . ');">';
                     echo '<div class="content feature">';
                     echo '<h3 class="feature-title">' . get_the_title() . '</h3>';
-                    echo '<h4>' . get_the_date() . '</h4>';
+                    echo '<h4 class="feature-date">' . get_the_date() . '</h4>';
                     echo '<div class="hide-on-small">' . get_the_content() . '</div>';
                     echo '</div>
                       </div>';
