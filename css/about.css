@@ -1,0 +1,26 @@
+input {
+  display: none;
+  visibility: hidden;
+}
+label {
+  display: block;
+  padding: 0.5em;
+  text-align: left;
+}
+label::before {
+  content: "+";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+}
+#expand {
+  height: 0px;
+  overflow: hidden;
+}
+#toggle:checked ~ #expand {
+  height: auto;
+}
+#toggle:checked ~ label::before {
+  content: "-";
+}

@@ -1,4 +1,4 @@
-<?php /* Template Name: Photo Gallery */ ?>
+<?php /* Template Name: About */ ?>
 <?php get_header();
     date_default_timezone_set('EST');
     $currentTime = date('c');

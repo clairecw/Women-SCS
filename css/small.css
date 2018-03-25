@@ -15,12 +15,6 @@ html {
 	position: fixed; /* top blue bar w/ hamburger will stay at top of screen despite scroll */
 }
 
-.col.padding-bottom {
-	/* background scooted down 20px (60px mobile) so that blue top bar could precede hexagon design, 
-	need to move bottom blue bar down to cover the extra white background */
-	top: 60px;		
-}
-
 #main-nav .material-icons {
 	font-size: 30px; 	/* make hamburger icon bigger */
 	position: fixed;	/* hamburger will stay at top of screen despite scroll */
@@ -35,10 +29,12 @@ html {
 
 #dates {
 	margin-top: 0px;
+  position: relative;
+  top: 260px;
 }
 .cmu-logo {
 	height: 25px;
-} 
+}
 
 .event {
 	/*border-bottom: 1px solid;*/
@@ -55,6 +51,12 @@ hr {
 	background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, .5), rgba(0, 0, 0, 0));
 }
 
+.feature-title { /* to make feature post title look like other posts' titles */
+	font-size: 1.2rem;
+	margin: 7px 0px;
+	font-weight: 200;
+}
+
 .image {
 	width: 70%;
 	height: 30vw;
@@ -64,6 +66,21 @@ hr {
 	text-align: center;
 	margin-bottom: 11px;
 	margin-top: 16px;
+}
+
+.post2 {
+  position: relative;
+  top: 80px; /* margin so that second post is fully below first post HACKY!! */
+}
+
+.post3 {
+  position: relative;
+  top: 160px; /* margin so that third post is fully below second post HACKY!!! */
+}
+
+.posts-row2 {
+  position: relative;
+  top: 80px; /* margin so that third post is fully below second post HACKY!!! */
 }
 
 .description {
@@ -112,7 +129,7 @@ h4 {
 	font-weight: 200;
 }
 
-@media (max-width: 350px) { 
+@media (max-width: 350px) {
 	h1 {
 		font-size: 2.3rem;
 	}
@@ -134,4 +151,39 @@ h4 {
 img {
 	padding-top: 5px;
 	padding-bottom: 5px;
+}
+
+.footer {
+  top: 400px;
+  position: relative;
+}
+
+.mission-footer {
+  text-align: center;
+  padding: 16px 64px;
+  background: rgba(50, 50, 50, 0.7);
+  color: white;
+}
+
+.hide-on-small {
+  display: none;
+}
+
+.zindex-top {
+  z-index: 999;
+}
+
+.content {
+    position: relative;
+    top: 30vw;
+}
+
+.row.content-top {
+    position: relative;
+    top: 80px;
+}
+
+.upcoming-events {
+	font-size: 1.3rem;
+	font-weight: 600;
 }

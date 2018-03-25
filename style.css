@@ -57,10 +57,6 @@ p {
 	color: #46524e;
 }
 
-iframe {
-	max-width: 100%;
-}
-
 #dates {
 	font-size: 14px;
 }
@@ -90,20 +86,14 @@ iframe {
 	text-align: center;
 }
 
-.image.feature {
-  width: 60%;
-  background-size: cover;
-}
-
-.thumbnail {
-  height: 400px;
-  width: 300px;
-  background-size: cover;
-}
-
 .news {
   	padding: 0px 10px;
   	width: 100%;
+}
+
+.image {
+	background-image: url(img/feature.jpeg);
+	background-size: cover;
 }
 
 .button {
@@ -114,21 +104,8 @@ iframe {
 	color: #fff;
 	border-radius: 15px;
 	line-height: 3;
-  padding: 6px 24px;
-  margin-top: 24px;
-  display: inline-block
-}
-
-.button:hover {
-  cursor: pointer;
-}
-
-.button:active {
-  background-color: #00569d;
-}
-
-.post-link {
-  color: #00294b;
+	width: 180px;
+	margin: auto;
 }
 
 .scs-logo {
@@ -138,9 +115,6 @@ iframe {
 	height: 40px;
 }
 
-/* Image formats for posts */
-
-img {
-	max-width: 100%;
-    height: auto;
+.dropdown-content {
+  top: 64px!important;
 }

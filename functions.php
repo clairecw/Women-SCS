@@ -60,7 +60,7 @@ class wscs_materializecss_large_walker extends Walker_Nav_Menu
 
 	   //add id corresponding to parent...this is ouputted in the ul tag that contains a submenu
 	   $parentID = $this->wscsCurItem;
-	   $output .= "\n" . $indent . '<ul ' . $id . ' class="dropdown-content" id="child-of-' . $parentID .'">' . "\n";
+	   $output .= "\n" . $indent . '<ul ' . $id . ' class="dropdown-content dropdown-top" id="child-of-' . $parentID .'">' . "\n";
 	}
 
 
@@ -174,7 +174,7 @@ function envira_gallery_image_titles( $output, $id, $item, $data, $i ) {
 
   // IDs of galleries to display titles on
   $galleriesToShowTitles = array(
-    79
+    260
   );
 
   // Check if we need to display titles on this gallery
@@ -195,5 +195,51 @@ function modify_read_more_link() {
     return '<a class="button" href="' . get_permalink() . '">Read Full Story</a>';
 }
 add_filter( 'the_content_more_link', 'modify_read_more_link' );
+add_filter( 'wp_nav_menu_items','add_search_box', 1, 2 );
+
+function get_search_form_custom( $echo = true ) {
+    do_action( 'pre_get_search_form' );
+ 
+    $format = current_theme_supports( 'html5', 'search-form' ) ? 'html5' : 'xhtml';
+    $format = apply_filters( 'search_form_format', $format );
+ 
+    $search_form_template = locate_template( 'searchform.php' );
+    if ( '' != $search_form_template ) {
+        ob_start();
+        require( $search_form_template );
+        $form = ob_get_clean();
+    } else {
+        if ( 'html5' == $format ) {
+            $form = '<form role="search" method="get" class="search-form" action="' . esc_url( home_url( '/' ) ) . '">
+                <label>
+                    <span class="screen-reader-text">' . _x( 'Search for:', 'label' ) . '</span>
+                    <input type="search" class="search-field" placeholder="Search" value="' . get_search_query() . '" name="s" />
+                </label>
+                <input type="submit" class="search-submit" value="'. esc_attr_x( 'Search', 'submit button' ) .'" />
+            </form>';
+        } else {
+            $form = '<form role="search" method="get" id="searchform" class="searchform" action="' . esc_url( home_url( '/' ) ) . '">
+                <div>
+                    <input type="text" value="' . get_search_query() . '" name="s" id="s" placeholder="Search" />
+                </div>
+            </form>';
+        }
+    }
+    $result = apply_filters( 'get_search_form', $form );
+    if ( null === $result )
+        $result = $form;
+    if ( $echo )
+        echo $result;
+    else
+        return $result;
+}
+
+function add_search_box( $items, $args ) {
+	$items .= '<li class="searchbox-position">' . get_search_form_custom( false ) . '</li>';
+	return $items;
+}
+
+
 
 ?>
+
