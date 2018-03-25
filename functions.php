@@ -90,7 +90,12 @@ class wscs_materializecss_large_walker extends Walker_Nav_Menu
 
 
        $prepend = '<strong>';
-       $append = '</strong><i class="material-icons right">arrow_drop_down</i>';
+       if (esc_attr( $item->url ) == 'https://www.women.cs.cmu.edu/test-site') {
+         $append = '</strong><i class="material-icons right"></i>';
+       }
+       else {
+         $append = '</strong><i class="material-icons right">arrow_drop_down</i>';
+       }
        $description  = ! empty( $item->description ) ? '<span>'.esc_attr( $item->description ).'</span>' : '';
 
        if($depth != 0)
