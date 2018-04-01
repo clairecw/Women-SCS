@@ -10,7 +10,6 @@ h4 for featured news story author, p for mission + featured news story descripti
 h5 for regular news story title, h6 for regular news story author */
 
 h1, h2, h4, h6 {
-	text-transform: uppercase;
 	margin: 0;
 }
 

@@ -162,6 +162,11 @@ html {
   position: relative;
 }
 
+.index-footer {
+  top: 80px;
+  position: relative;
+}
+
 .mission-footer {
   text-align: center;
   padding: 16px 120px;

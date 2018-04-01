@@ -7,7 +7,7 @@
     // key = API key (obtain from console.developers.google.com - navigate to correct project > create credentials > API key)
     $calendarEventsRequest = wp_remote_get( 'https://www.googleapis.com/calendar/v3/calendars/women.at.scs@gmail.com/events?key=AIzaSyCOUaXqxVzZfCLB5Hqk_1WJZupfo7IoWv4&maxResults=2&timeMin=' . $currentTime);
     if ( is_array( $calendarEventsRequest ) ) {
-      $calendarEvents = $calendarEventsRequest['body']; // use the content
+        $calendarEvents = $calendarEventsRequest['body']; // use the content
     }
 ?>
 
@@ -164,4 +164,4 @@
 </div>
 </main>
 
-<?php get_footer(); ?>
+<?php get_footer('index'); ?>
