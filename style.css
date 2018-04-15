@@ -147,3 +147,30 @@ p {
 .no-results {
   display: inline-block;
 }
+
+::placeholder {
+  color: #46524e;
+}
+
+.searchbox-position {
+  max-height: 5px;
+  color: black;
+}
+
+.searchbox-position::placeholder {
+    color: gray;
+}
+
+.menu-home {
+  padding-bottom: 5px;
+}
+
+.searchform {
+  padding-left: 10px;
+  padding-right: 45px;
+}
+
+.search-input {
+  border-bottom: 1px solid #00294b!important;
+  box-shadow: 0 1px 0 0 #00294b!important;
+}
