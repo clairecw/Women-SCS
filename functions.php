@@ -66,8 +66,8 @@ class wscs_materializecss_large_walker extends Walker_Nav_Menu
 
   	function start_el(&$output, $item, $depth, $args)
   	{
-  	   // update who the parent is...
-  	   $currentId = $this->wscsCurItem = $item->ID;
+       // update who the parent is...
+       $currentId = $this->wscsCurItem = $item->ID;
 
        global $wp_query;
        $indent = ( $depth ) ? str_repeat( "\t", $depth ) : '';
@@ -86,7 +86,7 @@ class wscs_materializecss_large_walker extends Walker_Nav_Menu
        $attributes .= ! empty( $item->xfn )        ? ' rel="'    . esc_attr( $item->xfn        ) .'"' : '';
        $attributes .= ! empty( $item->url )        ? ' href="'   . esc_attr( $item->url        ) .'"' : '';
        // if depth is 0 (aka parent), then has id that corresponds with its child submenu
-       if ($depth == 0) $attributes .= ' class="wscs-dropdown" data-activates="child-of-'. $currentId .'"';
+       if ($depth == 0) $attributes .= (esc_attr( $item->url ) == 'https://www.women.cs.cmu.edu/test-site') ? '' : ' class="wscs-dropdown" data-activates="child-of-'. $currentId .'"';
 
 
        $prepend = '<strong>';
@@ -204,10 +204,10 @@ add_filter( 'wp_nav_menu_items','add_search_box', 1, 2 );
 
 function get_search_form_custom( $echo = true ) {
     do_action( 'pre_get_search_form' );
- 
+
     $format = current_theme_supports( 'html5', 'search-form' ) ? 'html5' : 'xhtml';
     $format = apply_filters( 'search_form_format', $format );
- 
+
     $search_form_template = locate_template( 'searchform.php' );
     if ( '' != $search_form_template ) {
         ob_start();

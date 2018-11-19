@@ -13,15 +13,24 @@
   </head>
 
   <body <?php body_class(); ?>>
-    <div class="row">
+    <div class="row blue-bar">
       <div class="col s12 padding-top zindex-top"></div>
     </div>
 
-
-    <!-- start nav bar -->
       <!-- z-depth-0 removes the shadow effect that is the default for materialize css nav bars -->
-      <nav id="main-nav" class="z-depth-0">
-        <div class="nav-wrapper">
+      <div class="row content-top">
+        <!-- start W@SCS general info (CMU logo, W@SCS, mission) -->
+        <div class="col s12 l3">
+          <div class="wscs-info">
+            <a href="https://www.cmu.edu/"><img class="cmu-logo" src="<?php echo get_template_directory_uri() . '/img/cmu_wordmark.png';?>"></a>
+          </div>
+          <a href="<?php echo home_url(); ?>" style="color: #00294b;"><h1 class="wscs-info">WOMEN<b>@SCS</b></h1></a>
+        </div>
+        <!-- end W@SCS general info (CMU logo, W@SCS, mission) -->
+
+        <!-- start nav bar -->
+        <div class="col s12 l9">
+        <nav class="nav-wrapper">
           <a href="#" data-activates="mobile-nav" class="button-collapse"><i class="material-icons">menu</i></a> <!-- hamburger icon :D - only visible on mobile -->
           <?php
             $defaults = array(
@@ -47,6 +56,7 @@
             );
             wp_nav_menu($defaults);
          ?>
+        </nav>
         </div>
-      </nav>
-    <!-- end nav bar -->
+        <!-- end nav bar -->
+      </div>

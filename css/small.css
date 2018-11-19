@@ -21,9 +21,8 @@ html {
 	top: 0px;
 }
 
-/* "content-top" is upcoming dates section + wscs general info section (CMU logo, w@scs, mission) */
+/* "content-top" is wscs general info section (CMU logo, w@scs, mission) */
 .content-top {
-	margin-top: 200px; /* large margin so that text doesn't start on top of hexagon design */
 	text-align: center;
 }
 
@@ -80,7 +79,7 @@ hr {
 
 .post3 {
   position: relative;
-  top: 160px; /* margin so that third post is fully below second post HACKY!!! */
+  top: 200px; /* margin so that third post is fully below second post HACKY!!! */
 }
 
 .posts-row2 {
@@ -159,7 +158,6 @@ img {
 }
 
 .footer {
-  top: 400px;
   position: relative;
 }
 
@@ -168,6 +166,10 @@ img {
   padding: 16px 64px;
   background: rgba(50, 50, 50, 0.7);
   color: white;
+}
+
+.index-footer > .mission-footer {
+  margin-top: 400px; // hacky way for footer to show below everything else
 }
 
 .hide-on-small {
@@ -185,7 +187,9 @@ img {
 
 .row.content-top {
     position: relative;
-    top: 80px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
 }
 
 .upcoming-events {
@@ -199,4 +203,94 @@ img {
 
 .content.full-width > i {
   font-size: 1rem;
+}
+
+.button-collapse {
+  z-index: 999!important;
+}
+
+.blue-bar {
+  margin-bottom: 0px!important;
+}
+
+.row.content-top > .col.s12.l3 {
+  margin-top: 30px;
+  order: 2;
+}
+
+.side-nav {
+  text-align: left;
+}
+
+.column-2 {
+  width: 50%;
+  padding: 0% 10%;
+  margin: auto;
+}
+
+.column-events {
+  text-align: center;
+  padding: 0% 10%;
+  margin: auto;
+}
+
+/**** Begin Hexagons ****/
+
+.event-hexa {
+  position: relative;
+  width: 200px;
+  height: 115.47px;
+  margin: 57.74px 0;
+  float: left;
+}
+
+.event-hexa:before,
+.event-hexa:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+}
+
+.event-hexa:before {
+  bottom: 100%;
+  border-bottom: 57.74px solid transparent;
+}
+
+.event-hexa:after {
+  top: 100%;
+  width: 0;
+  border-top: 57.74px solid transparent;
+}
+
+.hex-overlay {
+	color: black;
+	text-align: center;
+	padding-top:15%;
+	top:50%;
+	padding-bottom:50%;
+  text-transform: uppercase;
+}
+
+#hexagons {
+  text-align: center;
+}
+
+#hexagons li img, #hexagons li a {
+  margin: auto;
+  width: 40%;
+}
+
+
+/**** End Hexagons ****/
+
+.events-col {
+  margin: auto!important;
+}
+
+.center-hexagon {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
 }

@@ -12,51 +12,6 @@
 ?>
 
 <main>
-	<div class="row content-top" style="height:180px;">
-
-      <!-- start W@SCS general info (CMU logo, W@SCS, mission) -->
-      <div class="col s12 l8">
-        <div class="wscs-info">
-          <a href="https://www.cmu.edu/"><img class="cmu-logo" src="<?php echo get_template_directory_uri() . '/img/cmu_wordmark.png';?>"></a>
-        </div>
-        <a href="<?php echo home_url(); ?>" style="color: inherit;"><h1 class="wscs-info">WOMEN<b>@SCS</b></h1></a>
-      </div>
-      <!-- end W@SCS general info (CMU logo, W@SCS, mission) -->
-
-      <div class="col s12 section-divider"><hr></div>
-
-      <!-- start desktop upcoming events info -->
-      <div class="col s12 l4 hide-on-small" id="dates">
-        <div class="upcoming-events"> Upcoming Events</div>
-            <?php
-	        	$json = json_decode($calendarEvents, true);
-            // var_dump($json["items"]);
-
-            usort($json["items"], function($a, $b) { //Sort the array using a user defined function
-              $dateStringA = $a["start"]["date"] ? $a["start"]["date"] : $a["start"]["dateTime"];
-              $dateStringB = $b["start"]["date"] ? $b["start"]["date"] : $b["start"]["dateTime"];
-              $currSeconds = strtotime(time());
-              return strtotime($dateStringA) - $currSeconds < strtotime($dateStringB) - $currSeconds ? -1 : 1; //Compare the scores
-            });
-
-            // var_dump($json["items"]);
-            foreach ($json["items"] as $event) {
-	        		$dateString = $event["start"]["date"] ? $event["start"]["date"] : $event["start"]["dateTime"];
-	        		$date = date_create($dateString);
-	        		$formattedDate = date_format($date,"l, M j");
-	        		echo
-	        			'<div class="event">
-	        				<div class="info">' . $formattedDate . '</div>
-	        				<div class="name"><b>' . $event["summary"] . '</b></div>
-	        				<div class="info">' . $event["location"] . '</div>
-	        			</div>';
-	        	}
-	        ?>
-      </div>
-      <!-- end desktop upcoming events info -->
-
-    </div>
-
 
 	<div class="col s12 section-divider"></div>
 
