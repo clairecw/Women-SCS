@@ -6,7 +6,7 @@
 <title>Fellowships and Grants</title>
 </head>
 <main>
-<div class="jumbotron" style="background-image: url(https://www.women.cs.cmu.edu/Who/Photos/OurCS/OurCS_2015/IMG_0678.JPG); background-size: cover; position:relative; height:400px; background-position: top;">
+<div class="jumbotron" style="background-image: url(https://www.women.cs.cmu.edu/test-site/wp-content/uploads/2018/12/IMG_1821.jpg); background-size: cover; position:relative; height:400px; background-position: top;">
   <div class="overlay">
   <h2 style = "text-align: right">Fellowships and Grants</h2>
   </div>

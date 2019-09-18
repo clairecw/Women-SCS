@@ -30,8 +30,6 @@
     <div class="col s10 m10 l10">
         <h3>Grace Hopper Celebration of Women in Computing</h3>
         The <a href="http://gracehopper.org/">Grace Hopper Celebration of Women in Computing</a> is a series of conferences designed to bring the research and career interests of women in computing to the forefront. Presenters are leaders in their respective fields, representing industrial, academic and government communities. Leading researchers present their current work, while special sessions focus on the role of women in today's technology fields, including computer science, information technology, research and engineering.
-
-        Women@SCS presented at the conference in <a href="https://www.women.cs.cmu.edu/What/Outreach/GraceHopper/gh2000.php">2000</a>, <a href="https://www.women.cs.cmu.edu/What/Outreach/GraceHopper/gh2002.php">2002</a>, <a href="https://www.women.cs.cmu.edu/What/Outreach/GraceHopper/gh2004.php">2004</a>, <a href="https://www.women.cs.cmu.edu/What/Outreach/GraceHopper/gh2006.php">2006</a>, and <a href="https://www.women.cs.cmu.edu/What/Outreach/GraceHopper/gh2008.php">2008</a>.
     </div>
 </div>
 
@@ -41,7 +39,7 @@
     </div>
     <div class="col s10 m10 l10">
         <h3>Richard Tapia Celebration of Diversity in Computing</h3>
-        The <a href="http://www.richardtapia.org/">Richard Tapia Celebration of Diversity in Computing</a>, held in honor of Dr. Richard A. Tapia, highlights creative, innovative, and original research and applications of computing for under-represented groups. Women@SCS members attended the conference in <a href="https://www.women.cs.cmu.edu/What/Outreach/Tapia/tapia2003.php">2003</a> and <a href="https://www.women.cs.cmu.edu/Who/Photos/Tapia/2005">2005</a>.
+        The <a href="http://www.richardtapia.org/">Richard Tapia Celebration of Diversity in Computing</a>, held in honor of Dr. Richard A. Tapia, highlights creative, innovative, and original research and applications of computing for under-represented groups.
     </div>
 </div>
 

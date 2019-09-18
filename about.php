@@ -50,7 +50,7 @@
 		<br><h5>How does the Big Sister/Little Sister program work?</h5>
 		<p>At the start of the academic year, we email all of the upperclassmen in the organization asking them if they want to mentor a freshman, as well as send out an interest form to the freshmen who would like to have a Women@SCS mentor for the year. We then match these mentors up with the interested freshmen based on common interests or hobbies. Join our mailing list and get notified the next time we do Big/Little matchings!</p>
 		<br><h5>How do you budget time for all these activities and events?</h5>
-		<p>Within our undergraduate committee, different members work on different projects at the same time so we can streamline our planning process. We have pre-planned agendas for our weekly meetings, in which we organize upcoming events and delegate responsibilities.</p>
+		<p>Within our undergraduate committee, different members work on different projects at the same time so we can streamline our planning process. We have pre-planned agendas for our weekly meetings, in which we organize upcoming events and delegate responsibilities. Students do not have to worry about finding rooms, refreshments, materials. This is all taken care of for us by our Women@SCS faculty and administrators!</p>
 	</div>
 </div>
 </div>

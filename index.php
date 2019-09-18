@@ -30,7 +30,6 @@
                       . ');">';
                     echo '<div class="content feature">';
                     echo '<h3 class="feature-title">' . get_the_title() . '</h3>';
-                    echo '<h4 class="feature-date">' . get_the_date() . '</h4>';
                     echo '<div class="hide-on-small">' . get_the_content() . '</div>';
                     echo '</div>
                       </div>';
@@ -40,7 +39,6 @@
                       . '/img/feature.jpeg)">';
                     echo '<div class="content feature">';
                     echo '<h3 class="feature-title">' . get_the_title() . '</h3>';
-                    echo '<h4>' . get_the_date() . '</h4>';
                     echo '<div class="hide-on-small">' . get_the_content() . '</div>';
                     echo '</div>
                       </div>';
@@ -52,7 +50,7 @@
 		    <!-- TODO: hacky way of starting next row -->
 		    <div class="row news-section posts-row2">
 			<?php $postctr = $postctr + 1; ?>
-      <?php elseif ($postctr < 4): {
+      <?php elseif ($postctr < 2): {
         echo '<div class="col s12 l4 post post' . $postctr . '">';
         echo sprintf(
           '<a class="post-link" href="%s">', esc_url(get_permalink()));
@@ -62,8 +60,61 @@
             echo sprintf(
               '<div class="content full-width">
                       <h5>%s</h5>', the_title('','',false));
+            echo sprintf('</div>');
+            echo '</div></a>';
+        }
+        else {
+            echo '<div class="image thumbnail" style="background-image:url(' . get_bloginfo( 'stylesheet_directory' )
+              . '/img/feature.jpeg)">';
+            echo sprintf(
+              '<div class="content full-width">
+                      <h5>%s</h5>', the_title('','',false));
             echo sprintf('<i>%s</i>
                     </div>', get_the_date());
+            echo '</div></a>';
+        }
+        $postctr = $postctr + 1;
+        echo '</div>';
+      }?>
+	<!-- temp for Grad faculty potluck photos -->
+      <?php elseif ($postctr < 3): {
+        echo '<div class="col s12 l4 post post' . $postctr . '">';
+        echo sprintf(
+          '<a href="https://www.women.cs.cmu.edu/test-site/photo-gallery/2019-graduate-faculty-potluck/">');
+        if ( has_post_thumbnail() ) {
+            echo '<div class="image thumbnail" style="background-image:url(' . get_the_post_thumbnail_url()
+              . ')">';
+            echo sprintf(
+              '<div class="content full-width">
+                      <h5>%s</h5>', the_title('','',false));
+            echo sprintf('</div>');
+            echo '</div></a>';
+        }
+        else {
+            echo '<div class="image thumbnail" style="background-image:url(' . get_bloginfo( 'stylesheet_directory' )
+              . '/img/feature.jpeg)">';
+            echo sprintf(
+              '<div class="content full-width">
+                      <h5>%s</h5>', the_title('','',false));
+            echo sprintf('<i>%s</i>
+                    </div>', get_the_date());
+            echo '</div></a>';
+        }
+        $postctr = $postctr + 1;
+        echo '</div>';
+      }?>
+	<!-- temp for ourCS -->
+      <?php elseif ($postctr < 4): {
+        echo '<div class="col s12 l4 post post' . $postctr . '">';
+        echo sprintf(
+          '<a href="https://www.cmu.edu/cs/ourcs/">');
+        if ( has_post_thumbnail() ) {
+            echo '<div class="image thumbnail" style="background-image:url(' . get_the_post_thumbnail_url()
+              . ')">';
+            echo sprintf(
+              '<div class="content full-width">
+                      <h5>%s</h5>', the_title('','',false));
+            echo sprintf('</div>');
             echo '</div></a>';
         }
         else {

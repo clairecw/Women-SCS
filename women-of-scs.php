@@ -1,4 +1,4 @@
-<?php /* Template Name: Alumnae */ ?>
+<?php /* Template Name: Women of SCS */ ?>
 <?php get_header();
     date_default_timezone_set('EST');
     $currentTime = date('c');

@@ -92,6 +92,16 @@
     </a>
     </div>
     </li>
+  <li>
+    <div class = "hex-container">
+    <a href ="https://www.women.cs.cmu.edu/test-site/interview-with-jessica-hammer/"><img src = "https://www.women.cs.cmu.edu/test-site/wp-content/uploads/2019/01/jessica-hammer.jpg.preset.600.jpeg" alt= "Jessica Hammer Interview" min-width = "500px"/>
+    <div class = "alum-name" >
+      Jessica Hammer
+      <br/>Assistant Professor, Human Computer Interaction Institute
+    </div>
+    </a>
+    </div>
+    </li>
 </ul>
 </div>
 </div>

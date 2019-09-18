@@ -6,7 +6,7 @@
 <title>Undergraduate Sisters Program</title>
 </head>
 <main>
-<div class="jumbotron" style="background-image: url(https://www.women.cs.cmu.edu/test-site/wp-content/uploads/2018/09/IMG_1234.jpg); background-size: cover; position:relative; height:400px; background-position: top;">
+<div class="jumbotron" style="background-image: url(https://www.women.cs.cmu.edu/test-site/wp-content/uploads/2018/11/undergrad_resources.jpg); background-size: cover; position:relative; height:400px; background-position: top;">
   <div class="overlay">
   <h2 style = "text-align: right">Undergraduate Resources</h2>
   </div>
@@ -17,14 +17,14 @@
 <div class="row resource-icons">
     <div class="col s6 m6 l6">
 	<h2>Tom Cortina's Research Opportunities</h2>
-        <a href = "https://docs.google.com/document/d/17LK18JBGR5Z9zp2gEgHjuTCjKTLtOwotUJNzvjyRyww/edit?usp=sharing">
+        <a href = "https://docs.google.com/document/d/1h17Ra-fEr13ukq8cbw8q-lSG4nDQzTYZr9AFOs90R4U/edit" target="_blank">
 		<img src="<?php echo get_template_directory_uri() . '/img/svg/spreadsheet.svg';?>" class="resource-icon"/>
         </a>
     </div>
 
     <div class="col s6 m6 l6">
 	<h2>Schedule an Appointment with Kevin Collins (CPDC)</h2>
-        <a href = "https://cmu.joinhandshake.com/">
+        <a href = "https://cmu.joinhandshake.com/" target="_blank">
 		<img src="<?php echo get_template_directory_uri() . '/img/svg/calendar.svg';?>" class="resource-icon"/>
 	</a>
 	<p>Log in, select 'Appointments' on the 'Career Center' drop-down menu at the top of the page, then click on 'Schedule a New Appointment.'</p>
@@ -88,7 +88,7 @@
                     </ul>
                 </div>
             </div>
-        </div> 
+        </div>
         <div id="other" class="hidden">
             <div class="row">
                 <div class="col s6 m6 l6">
